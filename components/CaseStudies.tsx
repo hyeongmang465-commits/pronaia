@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { Section, CaseStudy } from '../types';
-import { INITIAL_CASE_STUDIES } from '../constants';
+import { Section, CaseStudy } from '../types.ts';
+import { INITIAL_CASE_STUDIES } from '../constants.tsx';
 import { Play, Plus, X, Video, FileText, User, UploadCloud, Info } from 'lucide-react';
 
 const CaseStudies: React.FC = () => {

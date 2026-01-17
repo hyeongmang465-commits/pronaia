@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Section } from '../types';
+import { Section } from '../types.ts';
 import { Send, Phone, MapPin, Mail } from 'lucide-react';
 
 const Contact: React.FC = () => {

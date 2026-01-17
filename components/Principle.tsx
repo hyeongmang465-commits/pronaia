@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Section } from '../types';
+import { Section } from '../types.ts';
 import { Zap, Activity, Atom, Wind } from 'lucide-react';
 
 const Principle: React.FC = () => {

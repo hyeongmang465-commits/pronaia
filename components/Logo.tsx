@@ -25,14 +25,11 @@ const Logo: React.FC<LogoProps> = ({ className = "w-10 h-10" }) => {
         </filter>
       </defs>
       <g filter="url(#glow)">
-        {/* Head */}
         <circle cx="50" cy="15" r="10" fill="url(#logo-grad)" />
-        {/* Left Wing */}
         <path 
           d="M48 45 L5 15 C25 15 42 30 48 45 Z" 
           fill="url(#logo-grad)" 
         />
-        {/* Right Wing */}
         <path 
           d="M52 45 L95 15 C75 15 58 30 52 45 Z" 
           fill="url(#logo-grad)" 

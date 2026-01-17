@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Section } from '../types';
-import { BRAND_NAME, BRAND_SUBTITLE } from '../constants';
+import { Section } from '../types.ts';
+import { BRAND_NAME, BRAND_SUBTITLE } from '../constants.tsx';
 
 const Hero: React.FC = () => {
   return (

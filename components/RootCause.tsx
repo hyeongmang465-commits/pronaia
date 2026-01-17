@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Section } from '../types';
+import { Section } from '../types.ts';
 import { AlertTriangle, Ghost, Users2, ShieldAlert, Sparkle } from 'lucide-react';
 
 const RootCause: React.FC = () => {

@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Section } from '../types';
-import { PROGRAM_DETAILS, PROGRAM_STEPS } from '../constants';
+import { Section } from '../types.ts';
+import { PROGRAM_DETAILS, PROGRAM_STEPS } from '../constants.tsx';
 import { CheckCircle2, Sparkles } from 'lucide-react';
 
 const Program: React.FC = () => {

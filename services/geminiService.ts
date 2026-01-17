@@ -1,7 +1,22 @@
 
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// API KEY가 없을 경우 서비스가 중단되는 것을 방지하기 위한 안전한 초기화
+const getAIClient = () => {
+  try {
+    const apiKey = process.env.API_KEY;
+    if (!apiKey) {
+      console.warn("API_KEY is not defined in process.env");
+      return null;
+    }
+    return new GoogleGenAI({ apiKey });
+  } catch (e) {
+    console.error("Failed to initialize GoogleGenAI:", e);
+    return null;
+  }
+};
+
+const ai = getAIClient();
 
 const SYSTEM_INSTRUCTION = `
 당신은 '내몸애맞게' 회사의 전문 AI 상담원입니다.
@@ -28,6 +43,10 @@ const SYSTEM_INSTRUCTION = `
 `;
 
 export const getAIResponse = async (userMessage: string) => {
+  if (!ai) {
+    return "현재 AI 서비스 설정이 완료되지 않았습니다. 관리자에게 문의해 주세요.";
+  }
+  
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
