@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { COMPANY_NAME, NAV_ITEMS } from '../constants';
-import Logo from './Logo';
+import { COMPANY_NAME, NAV_ITEMS } from '../constants.tsx';
+import Logo from './Logo.tsx';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

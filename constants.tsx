@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Section, NavItem, ProgramInfo, CaseStudy } from './types';
+import { Section, NavItem, ProgramInfo, CaseStudy } from './types.ts';
 import { Heart, TrendingUp, Sparkles, Award, ShieldCheck, Clock } from 'lucide-react';
 
 export const COMPANY_NAME = "내몸애맞게";
@@ -47,7 +47,7 @@ export const INITIAL_CASE_STUDIES: CaseStudy[] = [
     id: 'case-cancer-recovery',
     title: "유방암 4기 전이 극복 및 생체 활력 완전 회복",
     description: "62년생 여성 고객님으로, 겨드랑이 6cm 종양과 전이암으로 고통받던 중 22년 4월부터 인체 운동 에너지 조절을 시작하셨습니다. 현재 암은 사라졌으며 간 기능 개선과 함께 65세의 나이에도 밤샘이 가능할 정도의 활기찬 삶을 되찾으셨습니다.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // 실제 영상 URL로 교체 가능
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", 
     thumbnailUrl: "https://images.unsplash.com/photo-1581578731522-421712790938?auto=format&fit=crop&q=80&w=800",
     mentor: "내몸애 멘토 장인 전수"
   },

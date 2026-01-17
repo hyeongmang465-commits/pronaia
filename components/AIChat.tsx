@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, User, Bot, Loader2 } from 'lucide-react';
-import { getAIResponse } from '../services/geminiService';
+import { getAIResponse } from '../services/geminiService.ts';
 
 interface Message {
   role: 'user' | 'ai';
